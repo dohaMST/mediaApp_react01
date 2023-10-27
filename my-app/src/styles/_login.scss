@@ -1,0 +1,101 @@
+.login{
+    background-color: #f0f2f5;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .loginWrapper{
+        font-family: 'Roboto', sans-serif;
+        width: 70%;
+        height: 70%;
+        display: flex;
+        .loginLeft{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .loginLogo{
+                font-size: 4rem;
+                color: #1775ee;
+                text-transform: uppercase;
+                margin-bottom: .5rem;
+            }
+            .loginDesc{
+                font-size: 2.2rem;
+                text-transform: capitalize;
+            }
+
+        }
+        .loginRight{
+            flex: 1 !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .loginBox{
+                display: flex;
+                flex-direction: column;
+                background-color: #fff;
+                height: 100%;
+                border-radius: 1rem;
+                justify-content: center;
+                align-items: center;
+                .loginInput{
+                    width: 70%;
+                    text-transform: capitalize;
+                    padding-left: 1rem;
+                    margin-bottom: .5rem;
+                    height: 3rem;
+                    border: 2px solid #9c9696;
+                    outline: none;
+                    border-radius: .7rem;
+                    font-size: 1.1rem;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                button{
+                    width: 70%;
+                    height: 3rem;
+                        border-radius: .7rem;
+                        outline: none;
+                        border: none;
+                        font-size: 1.2rem;
+                        color: #fff;
+                        font-weight: 800;
+                        text-transform: capitalize;
+                        
+                        margin: {top: 1rem; bottom: 1rem;};
+                        cursor: pointer;
+                        transition: all .3s ease-in-out ;
+                    &.loginBtn{
+                        background-color: #1775ee;
+                        
+                        &:hover{
+                            background-color: #67a5f6;
+                            color: #042a5d;
+                        }
+                    }
+                    &.loginRegisterButton{
+                        background-color: #17eeb1;
+                        width: 50%;
+                        &:hover{
+                            background-color: #1a8648;
+                            color: #045d17;
+                        }
+                    }
+                    
+                }
+                .loginForgot{
+                    text-transform: capitalize;
+                    cursor: pointer;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+
+    }
+}

@@ -1,0 +1,124 @@
+.rightbar{
+    flex: 3.5;
+}
+.rightbar{
+    .rightbarWrapper{
+        padding: 1.7rem 1.7rem 0 0;
+        .bdContainer{
+            display: flex;
+            align-items: center;
+            .bdImg{
+                width: 3.3 rem;
+                height: 3.3rem;
+                margin-right: 1rem;
+            }
+            .bdText{
+                font-family: 'Roboto', sans-serif;
+                font-weight: 300;
+                font-size: 1.2rem;
+                b{
+                    text-transform: capitalize;
+                }
+            }
+        }
+        .rightbarAD{
+            width: 100%;
+            border-radius: 1rem;
+            margin: 1rem 0 .5rem .5rem;
+        }
+        .rightbarTitle{
+            text-transform: capitalize;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+            margin: 2rem 0;
+            font-size: 1.3rem;
+            margin-left: 1rem;
+
+        }
+        .rightbarFriendList{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            .rightbarFriend{
+                display: flex;
+                align-items: center;
+                margin: 20px ;
+                .rightbarImgProfileContainer{
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    margin-right: .9rem;
+                    .rightbarPrifileImg{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                    .rightbarOnline{
+                        background-color: rgb(0, 252, 25);
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        border: #fff solid;
+                        position: absolute;
+                        top: -0.1rem;
+                        left: 1.7rem; 
+                        
+                    }
+                }
+                .rightbarUsername{
+                    text-transform: capitalize;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 500;
+                }
+            }
+        }
+        .rightbarInfo{
+            text-transform: capitalize;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.1rem;
+            margin-left: 2rem;
+            .rightbarInfoItem{
+                margin-bottom: .4rem;
+                .rightbarInfoKey{
+                    color: #333;
+                }
+                .rightbarInfoValue{
+                    color: #999;
+                    margin-left: 1rem;
+                }
+            }
+            
+        }
+        .rightbarFollowings{
+            display: flex;
+            justify-content: space-evenly;
+
+            flex-wrap: wrap;
+            .rightbarFollowing{
+                display: flex;
+                margin-bottom: 1rem;
+                align-items: center;
+                flex-direction: column;
+                margin-right: .5rem;
+                cursor: pointer;
+
+                .rightbarfollowingImg{
+                    width: 150px;
+                    height: 150px;
+                    border-radius: .5rem;
+                    object-fit: cover;
+                }
+                .rightbarFollowingName{
+                    text-transform: capitalize;
+                    font-family: 'Roboto', sans-serif;
+                    margin-top: .2rem;
+
+                }
+            }
+        }
+    }
+}
+
+
+

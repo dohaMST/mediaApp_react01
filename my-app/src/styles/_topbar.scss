@@ -1,0 +1,102 @@
+
+
+.topbarContainer{
+    position: sticky;
+    top: 0;
+    background-color: #1877f2;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    width: 100% ;
+    padding: {top:1rem; bottom: 1rem};
+    height: 70px;
+    z-index: 99;
+
+    .topbarLeft{
+        flex: 3;
+        margin: auto;
+        
+        .logo{
+            
+            font-size: 1.5rem;
+            padding-left: 3rem;
+            font-weight: 600;
+            font-family: 'Roboto', sans-serif;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    }
+
+    .topbarCenter{
+        flex: 5;
+        .searchbar{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 2.2rem;
+            background-color: #fff;
+            border-radius: 1rem;
+            .searchInput{
+                width: 70%;
+                border: none;
+                &:focus{
+                    outline: none;
+                }
+            }
+            .searchIcon{
+                font-size: 1.4rem;
+                margin-left: 1rem;
+                color: #000;
+            }
+        }
+    }
+
+    .topbarRight{
+        flex: 4;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .topbarLinks{
+
+            .topbarLink{
+                font-size: 1.2rem;
+                text-transform: capitalize;
+                cursor: pointer;
+                margin-right: 1rem;
+            }
+        }
+
+        .topbarIcons{
+            display: flex;
+            .topbarIconItem{
+                cursor: pointer;
+                margin-right: 1rem;
+                position: relative;
+
+                .topbarIconBadge{
+                    background-color: red;
+                    border-radius: 50%;
+                    width: 1.2rem;
+                    height: 1.2rem;
+                    position: absolute;
+                    top: -5px;
+                    right: -10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+        }
+
+        .topbarImg{
+            width: 2rem;
+            height:2rem;
+            border-radius: 50%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+    }
+
+}
